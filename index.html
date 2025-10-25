@@ -11,9 +11,9 @@
   <!-- Hero Section -->
   <header class="hero">
     <div class="container">
-      <h1>Your Paper Title Here</h1>
-      <p class="authors">First Author¹ · Second Author² · Third Author³</p>
-      <p class="affiliations">¹Institution A · ²Institution B · ³Institution C</p>
+      <h1>FlowBind: Efficient Any-to-Any Generation with Bidirectional Flows</h1>
+      <p class="authors">Yeonwoo Cha Semin Kim, Jinhyeon Kwon, Seunghoon Hong </p>
+      <p class="affiliations">KAIST/p>
       <div class="buttons">
         <a class="btn" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">Paper (arXiv)</a>
         <!-- <a class="btn" href="static/paper.pdf" target="_blank">PDF</a> -->
@@ -35,7 +35,7 @@
     <div class="container">
       <h2>Abstract</h2>
       <p>
-        Here you copy the abstract of your paper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis.
+        Any-to-any generation seeks to translate between arbitrary subsets of modalities, enabling flexible cross-modal synthesis. Despite recent success, existing flow-based approaches are challenged by its inefficiency, as they require large-scale datasets often with restrictive pairing constraints, incur high computation cost from modeling joint distribution, and multi-stage training pipeline. We propose \textbf{FlowBind}, an efficient framework for any-to-any generation. Our approach is distinguished by its simplicity: it learns a shared latent space capturing cross-modal information, with modality-specific invertible flows bridging this latent to each modality. Both components are optimized jointly under a single flow-matching objective, and at inference the invertible flows act as encoders and decoders for direct translation across modalities. By factorizing interactions through the shared latent, FlowBind naturally leverages arbitrary subsets of modalities for training, and achieves competitive generation quality while substantially reducing data requirements and computational cost. Experiments on text, image, and audio demonstrate that FlowBind attains comparable quality while requiring up to 6× fewer parameters and training 10× faster than prior methods.
       </p>
     </div>
   </section>
