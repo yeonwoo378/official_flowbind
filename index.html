@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Paper Title Here</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Your Paper Title Here</h1>
+      <p class="authors">First Author¹ · Second Author² · Third Author³</p>
+      <p class="affiliations">¹Institution A · ²Institution B · ³Institution C</p>
+      <div class="buttons">
+        <a class="btn" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">Paper (arXiv)</a>
+        <a class="btn" href="static/paper.pdf" target="_blank">PDF</a>
+        <a class="btn" href="https://github.com/yourusername/yourrepo" target="_blank">Code</a>
+        <a class="btn" href="#bibtex">BibTeX</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Teaser Image -->
+  <section class="teaser">
+    <div class="container">
+      <img src="static/images/teaser.png" alt="Teaser image">
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section id="abstract" class="abstract">
+    <div class="container">
+      <h2>Abstract</h2>
+      <p>
+        Here you copy the abstract of your paper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Method / Approach -->
+  <section class="method">
+    <div class="container">
+      <h2>Method</h2>
+      <img src="static/images/method_diagram.png" alt="Method diagram">
+      <p>
+        Brief description of your method. For example: We propose FlowBind, which aligns multimodal latent spaces via reward-scaled test-time optimization…
+      </p>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="results">
+    <div class="container">
+      <h2>Results</h2>
+
+      <h3>Qualitative Results</h3>
+      <div class="image-grid">
+        <img src="static/images/result1.png" alt="Result 1">
+        <img src="static/images/result2.png" alt="Result 2">
+        <img src="static/images/result3.png" alt="Result 3">
+      </div>
+
+      <h3>Quantitative Results</h3>
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Ours</th><th>Baseline</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>FID ↓</td><td>12.3</td><td>15.8</td></tr>
+          <tr><td>IS ↑</td><td>8.5</td><td>7.1</td></tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section id="bibtex" class="bibtex">
+    <div class="container">
+      <h2>Citation</h2>
+      <pre><code>
+@inproceedings{YourPaperKey2025,
+  title={Your Paper Title Here},
+  author={First Author and Second Author and Third Author},
+  booktitle={ICLR 2025},
+  year={2025},
+  url={https://yourusername.github.io/yourprojectpage/}
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Acknowledgements / Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Contact: yourname@yourinstitution.edu</p>
+      <p>This page is based on the Nerfies template. Licensed under CC-BY-SA 4.0.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
