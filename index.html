@@ -155,6 +155,16 @@
         </div>
       </div>
     </div>
+    <div class="hero-body">
+      <!-- <h2 class="title is-3 has-text-centered">tl; dr</h2> -->
+      <div class="container is-max-desktop has-text-centered">
+          <h3 class="title is-5">TL;DR: We propose an efficient flow-based multimodal generation model with bidirectional flows.</h3> 
+          <div class="content has-text-centered">
+              <img src="./static/images/FlowBInd_fig1.png" class="interpolation-image"/>
+          </div>
+          An overview of FlowBind. During training, we jointly learn the shared latent and per-modality drift networks in a single stage. At inference, the learned drift networks perform flexible any-to-any generation by solving per-modality ODEs forward and backward in time
+    </div>
+</div>
   </div>
 </section>
 
@@ -231,19 +241,6 @@
     </div>
   </div>
 </section> -->
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <!-- <h2 class="title is-3 has-text-centered">tl; dr</h2> -->
-        <div class="container is-max-desktop has-text-centered">
-            <h3 class="title is-5">TL;DR: We propose an efficient flow-based multimodal generation model with bidirectional flows.</h3> 
-            <div class="content has-text-centered">
-                <img src="./static/images/FlowBInd_fig1.png" class="interpolation-image"/>
-            </div>
-            Placeholder Placehoder Placeholder Placehoder Placeholder Placehoder Placeholder Placehoder Placeholder Placehoder Placeholder Placehoder
-        </div>
-    </div>
-</section>
-
 
 
 <section class="section">
@@ -253,9 +250,6 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-             We propose an efficient flow-based multimodal generation model with bidirectional flows.
-          </p>
           <p>
             Any-to-any generation seeks to translate between arbitrary subsets of modalities, enabling flexible cross-modal synthesis. Despite recent success, existing flow-based approaches are challenged by its inefficiency, as they require large-scale datasets often with restrictive pairing constraints, incur high computation cost from modeling joint distribution, and multi-stage training pipeline. We propose \textbf{FlowBind}, an efficient framework for any-to-any generation. Our approach is distinguished by its simplicity: it learns a shared latent space capturing cross-modal information, with modality-specific invertible flows bridging this latent to each modality. Both components are optimized jointly under a single flow-matching objective, and at inference the invertible flows act as encoders and decoders for direct translation across modalities. By factorizing interactions through the shared latent, FlowBind naturally leverages arbitrary subsets of modalities for training, and achieves competitive generation quality while substantially reducing data requirements and computational cost. Experiments on text, image, and audio demonstrate that FlowBind attains comparable quality while requiring up to 6× fewer parameters and training 10× faster than prior methods.
           </p>
