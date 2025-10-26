@@ -2,6 +2,34 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.column_demo {
+  float: left;
+  width: 35%;
+  /* padding: 5px; */
+}
+
+.column_arrow {
+	vertical-align: middle;
+  float: left;
+  width: 20%;
+  padding: 5px;
+  height: 100%;
+}
+
+.dotline {
+ border-top: dotted 3px;
+ color: gray; 
+  width: 90%;
+}
+
+
+.thickline {
+ border:50px
+ color: black; 
+  width: 90%;
+}
+
+
 
 .footer .icon-link {
     font-size: 25px;
