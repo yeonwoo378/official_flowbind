@@ -28,6 +28,67 @@ body {
  color: black; 
   width: 90%;
 }
+.center_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 90%;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+
+.arrow_caption {
+    font-size:22pt;
+	padding-top:10pt;
+}
+
+
+.center_caption {
+      left: 0;
+      right: 10px;
+      font-size: 22px; 
+	  width: 70%; 
+	  padding-right: 70px;
+	  padding-bottom: 20px;
+      margin: auto;
+	  text-align: center;
+}
+
+.arrow_center {
+ float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* width: 20%; */
+  /* width: 50%; */
+  /* width: 100; */
+  /* height: 100; */ 
+}
+
+.float-container {
+	width: 30%;
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 33.3%;
+    float: left;
+    padding: 5px;
+    /* border: 2px solid red; */
+}  
 
 
 
