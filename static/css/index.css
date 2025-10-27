@@ -210,16 +210,9 @@ body {
   border-radius: 10px;
   padding: 0;
   font-size: 0;
-  /* overflow: hidden;
-  border: 1px solid #bbb;
-  display: flex;
-  flex-direction: row;   
-  align-items: flex-start;
-  gap: 30px;
-  margin: 25px 0; */
 
 }
-
+/* 
   .gen-item{
     display:flex;
     gap:20px;
@@ -229,19 +222,7 @@ body {
   .gen-item .cond{ flex:0 0 300px; }
   .gen-item .result{ flex:1 1 auto; min-width:0; }
   .gen-item img{ max-width:100%; height:auto; display:block; }
-  .gen-item .prompt{ white-space:pre-line; line-height:1.5; }
- .results-carousel .item .result {
-    flex: 1 1 auto;        
-    min-width: 0;  
-  }
- .results-carousel .item .result img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
-
-
+  .gen-item .prompt{ white-space:pre-line; line-height:1.5; } */
 
 .results-carousel video {
   margin: 0;
