@@ -224,18 +224,18 @@ body {
     flex: 0 0 300px;       
     max-width: 100%;
   }
- .results-carousel .item .cond h4 {
+ .h4 {
     margin: 0 0 8px;
     font-size: 16px;
     letter-spacing: .2px;
   }
- .results-carousel .item .cond .prompt {
+ .prompt {
     margin: 0 0 12px;
     line-height: 1.5;
     color: #333;
     white-space: pre-wrap;  
   }
- .results-carousel .item .cond img {
+ .img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -251,19 +251,8 @@ body {
     border-radius: 8px;
     display: block;
   }
- .results-carousel .item .result .h4 {
-    margin: 0 0 8px;
-    font-size: 16px;
-    letter-spacing: .2px;
-  }
 
 
- .results-carousel .item .result .prompt {
-    margin: 0 0 12px;
-    line-height: 1.5;
-    color: #333;
-    white-space: pre-wrap;  
-  }
 
 .results-carousel video {
   margin: 0;
