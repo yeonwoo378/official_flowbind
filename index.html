@@ -106,6 +106,15 @@
       height: 300px;
       border: none;
     }
+
+    .carousel .item .box {
+      display: flex;
+      justify-content: center;
+	flex-direction: column; 
+      align-items: center;
+      height: 300px;
+      border: none;
+    }
  .carousel .item h4 {
     margin: 0 0 8px;
     font-size: 18px;
@@ -305,12 +314,14 @@
 			  <!-- <div class="cond">
 				<h4>Condition</h4>
 				<div class="prompt"> -->
-				<h4>A cute dog playing in the park.</h4>
-	
-				<audio controls preload="none" style="width:40%;">
-				  <source src="static/images/ta2i_a1.wav" type="audio/wav">
-				  Your browser does not support the audio element.
-				</audio>
+				<div class="box">
+					<h4>A cute dog playing in the park.</h4>
+		
+					<audio controls preload="none" style="width:40%;">
+					  <source src="static/images/ta2i_a1.wav" type="audio/wav">
+					  Your browser does not support the audio element.
+					</audio>
+				</div>
 				Result
 				<img src="static/images/ta2i_result1.png">
 			  <!-- </div> -->
