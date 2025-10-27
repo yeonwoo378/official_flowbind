@@ -39,6 +39,94 @@
 
   <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.8.0/gradio.js"></script>
 
+  <style>
+    #project-previews {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      padding: 20px;
+    }
+
+    .project {
+      width: 300px;
+      /* Adjust as needed */
+      height: 320px;
+      /* Adjust as needed */
+      border: 1px solid #ddd;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project img {
+      width: 100%;
+      /* Make image fill the container */
+      height: 200px;
+      /* Adjust height as needed */
+      object-fit: cover;
+    }
+
+    .project h3,
+    .project p {
+      margin: 5px 0;
+    }
+
+    /* Hover effect */
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #project-previews a.project {
+      text-decoration: none;
+      /* Remove underline from links */
+      color: inherit;
+      /* Use the parent's text color */
+      display: block;
+      /* Make the anchor tag behave like a block element */
+    }
+
+    #project-previews a.project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .project {
+      width: 300px;
+      height: 320px;
+      /* Remove the border */
+      border: none;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      border: none;
+    }
+
+    .carousel .item img {
+      max-width: 100%;
+      height: 100%;
+      /* Make the image fill the container's height */
+      object-fit: cover;
+      /* Ensures the image covers the container while maintaining aspect ratio */
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      bulmaCarousel.attach('#results-carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+      });
+    });
+  </script>
+
+
 </head>
 <body>
 
@@ -73,6 +161,7 @@
 
   </div>
 </nav>
+	
 
 
 <section class="hero">
