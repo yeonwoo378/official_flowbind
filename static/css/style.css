@@ -237,6 +237,7 @@ body {
   }
  .results-carousel .item .result {
     flex: 1 1 auto;        
+    min-width: 0;  
   }
  .results-carousel .item .result img {
     width: 100%;
