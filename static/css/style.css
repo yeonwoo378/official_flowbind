@@ -221,7 +221,7 @@ body {
 }
 
  .results-carousel .item .cond {
-    flex: 0 0 320px;       
+    flex: 0 0 300px;       
     max-width: 100%;
   }
  .results-carousel .item .cond h4 {
