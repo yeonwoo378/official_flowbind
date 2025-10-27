@@ -215,8 +215,8 @@ body {
   display: flex;
   flex-direction: row;   
   align-items: flex-start;
-  gap: 20px;
-  margin: 24px 0;
+  gap: 30px;
+  margin: 25px 0;
 
 }
 
