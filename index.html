@@ -179,31 +179,31 @@ margin: 1px 1px;
       /* Ensures the image covers the container while maintaining aspect ratio */
     }
 
-.carousel .item.layout-table {
+.carousel .item .box .layout-table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 10px; /* 셀 사이 간격 */
         table-layout: fixed; /* 셀 너비 고정 (오디오 튀어나감 방지) */
     }
-   .carousel .item .input-cell {
+.carousel .item .box .layout-table .input-cell {
         width: 25%; /* 왼쪽 25% */
         vertical-align: middle;
     }
-   .carousel .item .output-cell {
+   .carousel .item .box .layout-table .output-cell {
         width: 75%; /* 오른쪽 75% */
         vertical-align: middle;
     }
-   .carousel .item .inner-table {
+   .carousel .item .box .layout-table .output-cell .inner-table {
         width: 100%;
         table-layout: fixed;
         text-align: center;
     }
-  .carousel .item  .audio-player {
+ .carousel .item .box .layout-table .output-cell .inner-table  .audio-player {
         width: 95%; /* 셀 안에서 꽉 차게 */
         height: 40px;
     }
     /* 텍스트 박스 스타일 */
-   .carousel .item .text-condition-box {
+  .carousel .item .box .layout-table .input-cell .text-condition-box {
         background-color: #f4f4f4;
         padding: 15px;
         border-radius: 5px;
