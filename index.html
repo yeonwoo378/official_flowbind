@@ -842,204 +842,217 @@ margin: 1px 1px;
 
 <section class="hero is-light is-small">
     <div class="hero-body">
-      <div class="container">
-        <h3 class="title is-3 has-text-centered">Text &#x2192 Audio</h3>
-        
-        <div id="results-carousel" class="carousel results-carousel">
-            
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"an engine idling with bells ringing in the background"</h4>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation" style="margin-bottom: 20px; background: transparent;">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#"><strong>FlowBind Project</strong></a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="#">Home</a>
+                        <a class="navbar-item" href="#">Paper</a>
+                        <a class="navbar-item" href="#">Code</a>
                     </div>
                 </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind1.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi1.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni1.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
 
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"a television plays in the distant background and then a sewing machine starts up"</h4>
-                    </div>
-                </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind2.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi2.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni2.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="title is-3 has-text-centered">Text &#x2192; Audio</h3>
 
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"helicopter blades spinning then fading away"</h4>
-                    </div>
-                </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind3.wav" type="audio/wav">
-                            </audio>
+            <div id="results-carousel" class="carousel results-carousel">
+                
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "an engine idling with bells ringing in the background"
+                                </p>
+                            </div>
                         </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi3.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni3.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"a cat meowing and whining"</h4>
-                    </div>
-                </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind4.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi4.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni4.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;">
+                                        <source src="static/audio/t2a_flowbind1.wav" type="audio/wav">
+                                    </audio>
+                                </div>
 
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"several loud burps"</h4>
-                    </div>
-                </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind5.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi5.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni5.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;">
+                                        <source src="static/audio/t2a_codi1.wav" type="audio/wav">
+                                    </audio>
+                                </div>
 
-            <div class="item">
-                <div class="box">
-                    <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-                    <div style="padding: 15px; background: #f4f4f4; border-radius: 5px; text-align: center; font-style: italic;">
-                        <h4>"typing is occurring on a keyboard in a quiet environment"</h4>
-                    </div>
-                </div>
-                <div class="tbox">
-                    <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-                    <div class="rbox" style="display: flex; justify-content: space-between; gap: 10px;">
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text"><strong>FlowBind</strong></span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_flowbind6.wav" type="audio/wav">
-                            </audio>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;">
+                                        <source src="static/audio/t2a_omni1.wav" type="audio/wav">
+                                    </audio>
+                                </div>
+                            </div>
                         </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">CoDi</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_codi6.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                        <div class="textbox" style="flex: 1; text-align: center;">
-                            <h4><span class="title-text">OmniFlow</span></h4>
-                            <audio controls preload="none" style="width:100%; margin-top: 5px;">
-                                <source src="static/audio/t2a_omni6.wav" type="audio/wav">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div> </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "a television plays in the distant background and then a sewing machine starts up"
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_flowbind2.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_codi2.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_omni2.wav" type="audio/wav"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "helicopter blades spinning then fading away"
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_flowbind3.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_codi3.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_omni3.wav" type="audio/wav"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "a cat meowing and whining"
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_flowbind4.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_codi4.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_omni4.wav" type="audio/wav"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "several loud burps"
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_flowbind5.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_codi5.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_omni5.wav" type="audio/wav"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px; padding: 10px;">
+                        <div style="flex: 3; min-width: 250px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Input Conditions</strong></h4>
+                            <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                                <p style="font-style: italic; text-align: center; word-wrap: break-word; word-break: keep-all; white-space: normal; line-height: 1.6;">
+                                    "typing is occurring on a keyboard in a quiet environment"
+                                </p>
+                            </div>
+                        </div>
+                        <div style="flex: 7; min-width: 400px; display: flex; flex-direction: column;">
+                            <h4 class="title is-5 has-text-centered" style="margin-bottom: 10px;"><strong>Generated Results</strong></h4>
+                            <div style="display: flex; justify-content: space-between; gap: 15px; background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #eee; flex-grow: 1; align-items: center;">
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; font-weight: bold; display: block; margin-bottom: 5px;">FlowBind</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_flowbind6.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">CoDi</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_codi6.wav" type="audio/wav"></audio>
+                                </div>
+                                <div style="flex: 1; min-width: 0; text-align: center;">
+                                    <span class="title-text" style="font-size: 0.9em; display: block; margin-bottom: 5px;">OmniFlow</span>
+                                    <audio controls style="width: 100%; height: 40px;"><source src="static/audio/t2a_omni6.wav" type="audio/wav"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </div>
     </div>
 </section>
 
