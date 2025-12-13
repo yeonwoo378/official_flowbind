@@ -237,6 +237,20 @@ margin: 1px 1px;
 		 background-color: transparent; 
 		max-width:60%
     }
+
+    .prompt-with-plus{
+  text-align: center;      /* 필요하면 */
+}
+
+.prompt-with-plus .plus-sign{
+  display: block;          /* 이게 핵심: 다음 줄로 */
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #ff3b7a;
+  margin-top: 6px;
+  line-height: 1;
+}
+원하는 
   </style>
 
   <script>
@@ -453,6 +467,7 @@ margin: 1px 1px;
                 <td style="width:28%; vertical-align:middle;">
                   <h4><em>"A cute dog playing in the park."</em></h4>
                   <br>
+                  <span class="plus-sign">+</span>
                   <audio controls preload="none" style="width:100%;">
                     <source src="static/images/ta2i_a1.wav" type="audio/wav">
                     Your browser does not support the audio element.
