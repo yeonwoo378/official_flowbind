@@ -402,119 +402,167 @@ margin: 1px 1px;
 
   </div>
 </section>
+
 <section class="hero is-light is-small">
-	<div class="hero-body">
-	  <div class="container">
-		<h3 class="title is-3 has-text-centered">Text + Audio &#x2192 Image</h3>
-		  
-		<div id="results-carousel" class="carousel results-carousel">
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A cute dog playing in the park.</h4>
-		
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a1.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-					<img src="static/images/ta2i_result1.png", loading="lazy">  
-				</div>
-			</div>
-			
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A car speeding down a highway.</h4>
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-3 has-text-centered">Text + Audio &#x2192 Image</h3>
 
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a2.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-					<img src="static/images/ta2i_result2.png", loading="lazy">  
-			    </div>
-			</div>
+      <div id="results-carousel-ta2i" class="carousel results-carousel">
 
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A misty forest path.</h4>
+        <!-- ===== Item 1 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                </td>
+                <td style="width:35%; vertical-align:middle;">
+                  <h4><em>"A cute dog playing in the park."</em></h4>
 
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a3.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
 
-					<img src="static/images/ta2i_result3.png", loading="lazy">  
-				</div>
-			</div>
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                </td>
+                <td style="width:65%; vertical-align:top;">
+                  <img src="static/images/ta2i_result1.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A living room with a carpet.</h4>
+        <!-- ===== Item 2 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                  <h4>A car speeding down a highway.</h4>
 
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a4.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-					<img src="static/images/ta2i_result4.png", loading="lazy">  
-				</div>
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
 
-			</div>
-			
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A garden with flowers</h4>
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <img src="static/images/ta2i_result2.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a5.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-					<img src="static/images/ta2i_result5.png", loading="lazy">  
-				</div>
+        <!-- ===== Item 3 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                  <h4>A misty forest path.</h4>
 
-			</div>
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
 
-			<div class="item">
-				<div class="box">
-					<h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
-					<h4>A rooftop terrace with a view.</h4>
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <img src="static/images/ta2i_result3.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-					<audio controls preload="none" style="width:100%;">
-					  <source src="static/images/ta2i_a6.wav" type="audio/wav">
-					  Your browser does not support the audio element.
-					</audio>
-				</div>
-				<div class="box">
-					<h4><span class="title-text"><strong>Generated Results</strong></span></h4>
-					<img src="static/images/ta2i_result6.png", loading="lazy"">  
-				</div>
+        <!-- ===== Item 4 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                  <h4>A living room with a carpet.</h4>
 
-			</div>
-			
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a4.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
 
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <img src="static/images/ta2i_result4.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-		</div>
-	  </div>
+        <!-- ===== Item 5 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                  <h4>A garden with flowers</h4>
 
-	</div>
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
+
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <img src="static/images/ta2i_result5.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== Item 6 ===== -->
+        <div class="item">
+          <div class="box">
+            <table class="layout-table">
+              <tr>
+                <td style="width:35%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Input Conditions</strong></span></h4>
+                  <h4>A rooftop terrace with a view.</h4>
+
+                  <audio controls preload="none" style="width:100%;">
+                    <source src="static/audio/ta2i_a6.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                  </audio>
+                </td>
+
+                <td style="width:65%; vertical-align:top;">
+                  <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                  <img src="static/images/ta2i_result6.png" loading="lazy" style="width:70%; height:auto; display:block; margin:0 auto;">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <section class="hero is-light is-small">
 	<div class="hero-body">
