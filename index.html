@@ -1140,14 +1140,16 @@ margin: 1px 1px;
           <div class="item">
             <div class="box">
               <table class="layout-table">
-                <!-- Header row -->
+                <!-- Header -->
                 <tr>
-                  <td class="input-cell" rowspan="4">
+                  <!-- 왼쪽 입력 칸: rowspan으로 아래 3줄 먹기 -->
+                  <td rowspan="4" style="width:28%; vertical-align:top;">
                     <h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4>
                     <h4>placeholder</h4>
                   </td>
 
-                  <td class="output-cell" colspan="3">
+                  <!-- 오른쪽 전체 헤더 -->
+                  <td colspan="3">
                     <h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4>
                   </td>
                 </tr>
