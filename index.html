@@ -362,7 +362,7 @@ margin: 1px 1px;
     <div class="hero-body">
       <!-- <h2 class="title is-3 has-text-centered">tl; dr</h2> -->
       <div class="container is-max-desktop has-text-centered">
-          <h3 class="title is-5">TL;DR: We propose an efficient flow-based multimodal generation model with bidirectional flows.</h3> 
+          <h3 class="title is-5">TL;DR: We propose an efficient flow-based multimodal any-to-any generation model with bidirectional flows.</h3> 
           <div class="content has-text-centered">
               <img src="./static/images/FlowBInd_fig1.png" class="interpolation-image"/>
           </div>
@@ -1259,6 +1259,199 @@ margin: 1px 1px;
                   <td class="has-text-centered">
                     <audio controls class="audio-player" style="width:95%;">
                       <source src="static/images/i2ta_omni_a2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="box">
+              <table class="layout-table" cellpadding="12" cellspacing="7">
+                <!-- Header -->
+                <tr>
+                  <!-- 왼쪽 입력 칸: rowspan으로 아래 3줄 먹기 -->
+                   
+                  <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                  
+
+                  <!-- 오른쪽 전체 헤더 -->
+                  <td colspan="3">
+                    <h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4>
+                  </td>
+                </tr>
+
+                <!-- Model names -->
+                <tr>
+                  <td rowspan="3" style="vertical-align:middle; width:30%;">
+                    <!-- <h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4> -->
+                    <!-- <h4><em>"The train tracks are lined with bluebonnets."</em></h4> -->
+                    <img src="static/images/i2ta_i3.jpg" loading="lazy" style="width:85%; height:auto;">
+  
+                  </td>
+                  <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                </tr>
+
+                <!-- Images -->
+                <tr style="text-align: center;">
+                  <td style="text-align: center;">
+                    <h4><em>A kitchen sink with a faucet and stainless steel faucet.</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                   <h4><em>sexy she and his big boyfriend with sexy man and she both love with a man with a suit and his pretty dress for them.</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                    <h4><em>A faucet is turned on</em></h4> 
+                  </td>
+                </tr>
+
+                <!-- Audios -->
+                <tr>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_flowbind_a3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_codi_a3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_omni_a3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="box">
+              <table class="layout-table" cellpadding="12" cellspacing="7">
+                <!-- Header -->
+                <tr>
+                  <!-- 왼쪽 입력 칸: rowspan으로 아래 3줄 먹기 -->
+                   
+                  <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                  
+
+                  <!-- 오른쪽 전체 헤더 -->
+                  <td colspan="3">
+                    <h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4>
+                  </td>
+                </tr>
+
+                <!-- Model names -->
+                <tr>
+                  <td rowspan="3" style="vertical-align:middle; width:30%;">
+                    <!-- <h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4> -->
+                    <!-- <h4><em>"The train tracks are lined with bluebonnets."</em></h4> -->
+                    <img src="static/images/i2ta_i4.jpg" loading="lazy" style="width:85%; height:auto;">
+  
+                  </td>
+                  <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                </tr>
+
+                <!-- Images -->
+                <tr style="text-align: center;">
+                  <td style="text-align: center;">
+                    <h4><em>The dog is smiling with its mouth open.</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                   <h4><em>dogs are dogs</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                    <h4><em>A dog growls and barks</em></h4> 
+                  </td>
+                </tr>
+
+                <!-- Audios -->
+                <tr>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_flowbind_a4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_codi_a4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_omni_a4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="box">
+              <table class="layout-table" cellpadding="12" cellspacing="7">
+                <!-- Header -->
+                <tr>
+                  <!-- 왼쪽 입력 칸: rowspan으로 아래 3줄 먹기 -->
+                   
+                  <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                  
+
+                  <!-- 오른쪽 전체 헤더 -->
+                  <td colspan="3">
+                    <h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4>
+                  </td>
+                </tr>
+
+                <!-- Model names -->
+                <tr>
+                  <td rowspan="3" style="vertical-align:middle; width:30%;">
+                    <!-- <h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4> -->
+                    <!-- <h4><em>"The train tracks are lined with bluebonnets."</em></h4> -->
+                    <img src="static/images/i2ta_i5.jpg" loading="lazy" style="width:85%; height:auto;">
+  
+                  </td>
+                  <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                  <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                </tr>
+
+                <!-- Images -->
+                <tr style="text-align: center;">
+                  <td style="text-align: center;">
+                    <h4><em>The Nissan aqua is shown.</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                   <h4><em>ceo de 300 m 2 in a very [unk] number 300 the car is complete in 3d.</em></h4> 
+                  </td>
+                  <td style="text-align: center;">
+                    <h4><em>A car with a revving engine and a spo</em></h4> 
+                  </td>
+                </tr>
+
+                <!-- Audios -->
+                <tr>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_flowbind_a5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_codi_a5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="has-text-centered">
+                    <audio controls class="audio-player" style="width:95%;">
+                      <source src="static/images/i2ta_omni_a5.wav" type="audio/wav">
                     </audio>
                   </td>
                 </tr>
