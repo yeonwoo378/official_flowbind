@@ -101,7 +101,7 @@
     }
     .viewport-line {
       border: 0;
-      border-top: 1px solid rgba(130, 130, 130, 0.5);
+      border-top: 1px solid rgba(180, 180, 180, 0.5);
       width: 100vw;                          /* 화면 전체 폭 */
       margin-left: calc(50% - 50vw);         /* 컨테이너 가운데에서 화면 기준으로 확장 */
       margin-right: calc(50% - 50vw);
@@ -422,13 +422,18 @@ margin: 1px 1px;
       <div class="container content has-text-centered">
           <h3 class="title is-3">Many-to-One Generation</h3> 
       </div>
+      <p>
+        FlowBind can take multiple inputs—such as text, images, and audio—and generates outputs that are aligned with all provided modalities.
+      </p>
   </div>
 </section>
+
+<hr class="viewport-line">
 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h3 class="title is-3 has-text-centered">Text + Audio &#x2192 Image</h3>
+      <h3 class="title is-4 has-text-centered">Text + Audio &#x2192 Image</h3>
 
       <div id="results-carousel" class="carousel results-carousel">
 
@@ -767,7 +772,7 @@ margin: 1px 1px;
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h3 class="title is-3 has-text-centered">Image + Audio &#x2192 Text</h3>
+      <h3 class="title is-4 has-text-centered">Image + Audio &#x2192 Text</h3>
 
       <div id="results-carousel" class="carousel results-carousel">
 
@@ -1062,12 +1067,22 @@ margin: 1px 1px;
 
 
 
-<!-- one-to-many -->
+<section class="section" id="one-to-many">
+  <div class="container">
+      <div class="container content has-text-centered">
+          <h3 class="title is-3">One-to-One Generation</h3> 
+      </div>
+      <p>
+        FlowBind can take a single and generates multiple outputs of different modalities.
+      </p>
+  </div>
+</section>
+<hr class="viewport-line">
 
-<section class="hero is-small" id="one-to-many">
+<section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h3 class="title is-3 has-text-centered">Text &#x2192; Image + Audio</h3>
+        <h3 class="title is-4 has-text-centered">Text &#x2192; Image + Audio</h3>
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
@@ -1274,7 +1289,7 @@ margin: 1px 1px;
 <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h3 class="title is-3 has-text-centered">Image &#x2192; Text + Audio</h3>
+        <h3 class="title is-4 has-text-centered">Image &#x2192; Text + Audio</h3>
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
@@ -1606,12 +1621,22 @@ margin: 1px 1px;
 </section>
 
 <hr class="viewport-line">
+<section class="section" id="one-to-one">
+  <div class="container">
+      <div class="container content has-text-centered">
+          <h3 class="title is-3">One-to-One Generation</h3> 
+      </div>
+      <p>
+        FlowBind supports all six one-to-one cross-modal generation directions among text, images, and audio.
+      </p>
+  </div>
+</section>
+<hr class="viewport-line">
 
-<!-- one-to-one -->
-<section class="hero is-small" id="one-to-one">
+<section class="hero is-small">
 	<div class="hero-body">
 	  <div class="container">
-		<h3 class="title is-3 has-text-centered">Text &#x2192 Image</h3>
+		<h3 class="title is-4 has-text-centered">Text &#x2192 Image</h3>
 		  
 		  <div id="results-carousel" class="carousel results-carousel">
 
@@ -1906,7 +1931,7 @@ margin: 1px 1px;
 <section class="hero is-small">
 	<div class="hero-body">
 	  <div class="container">
-		<h3 class="title is-3 has-text-centered">Image &#x2192 Text</h3>
+		<h3 class="title is-4 has-text-centered">Image &#x2192 Text</h3>
 		  
 		<div id="results-carousel" class="carousel results-carousel">
 			<div class="item">
@@ -2143,7 +2168,7 @@ margin: 1px 1px;
 <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h3 class="title is-3 has-text-centered">Text &#x2192; Audio</h3>
+        <h3 class="title is-4 has-text-centered">Text &#x2192; Audio</h3>
 
         <div id="results-carousel" class="carousel results-carousel">
             
@@ -2399,7 +2424,7 @@ margin: 1px 1px;
 <section class="hero is-small">
 	<div class="hero-body">
 	  <div class="container">
-		<h3 class="title is-3 has-text-centered">Audio &#x2192 Text</h3>
+		<h3 class="title is-4 has-text-centered">Audio &#x2192 Text</h3>
 		  
 		<div id="results-carousel" class="carousel results-carousel">
 			<div class="item">
@@ -2563,7 +2588,7 @@ margin: 1px 1px;
 <section class="hero is-small">
 	<div class="hero-body">
 	  <div class="container">
-		<h3 class="title is-3 has-text-centered">Audio &#x2192 Image</h3>
+		<h3 class="title is-4 has-text-centered">Audio &#x2192 Image</h3>
 		  
 		  <div id="results-carousel" class="carousel results-carousel">
 
@@ -2865,7 +2890,7 @@ margin: 1px 1px;
 <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h3 class="title is-3 has-text-centered">Image &#x2192; Audio</h3>
+        <h3 class="title is-4 has-text-centered">Image &#x2192; Audio</h3>
 
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
