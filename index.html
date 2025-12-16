@@ -99,6 +99,16 @@
       text-align: center;
       transition: transform 0.3s ease;
     }
+    .viewport-line {
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      width: 100vw;                          /* 화면 전체 폭 */
+      margin-left: calc(50% - 50vw);         /* 컨테이너 가운데에서 화면 기준으로 확장 */
+      margin-right: calc(50% - 50vw);
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
 
     .carousel .item {
       display: flex;
@@ -745,8 +755,9 @@ margin: 1px 1px;
   </div>
 </section>
 
+<hr class="viewport-line">
 
-<section class="hero is-light is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h3 class="title is-3 has-text-centered">Image + Audio &#x2192 Text</h3>
@@ -2163,7 +2174,7 @@ margin: 1px 1px;
                   </div>
                 </div>
 
-                           <div class="item">
+              <div class="item">
                 <div class="box">
                     <table class="layout-table">
                         <tr>
@@ -2202,225 +2213,167 @@ margin: 1px 1px;
                   </div>
                 </div>
                 
-
-            <div class="item">
+              <div class="item">
                 <div class="box">
                     <table class="layout-table">
                         <tr>
-                           <td style="width:21%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
-                           <td style="width:79%;"><h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4></td>
-                        </tr>
-                        <tr>
-                          <td style="width:21%; vertical-align:middle;  text-align: center;">
-                            <h4><em>"television plays in the distant background and then a sewing machine starts up"</em></h4>
-                          </td>
-                          <td style="width:79%; vertical-align:middle;  text-align: center;">
-                            <table class="inner-table" cellpadding="10" cellspacing="15">
-                              <tr>
-                                <td><h4><strong>FlowBind</strong></h4></td> 
-                                <td><h4>CoDi</h4></td>  
-                                <td><h4>OmniFlow</h4></td>
-                              </tr> 
-                              <tr>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_flowbind2.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_codi2.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_omni2.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-
-                              </tr>
-                            </table>
+                          <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                          <td colspan="3">
+                            <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
                           </td>
                         </tr>
-                      </table>
-                </div>
-              </div>
-            
-            <div class="item">
-                <div class="box">
-                    <table class="layout-table">
                         <tr>
-                           <td style="width:21%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
-                           <td style="width:79%;"><h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4></td>
-                        </tr>
-                        <tr>
-                          <td style="width:21%; vertical-align:middle;  text-align: center;">
+                          <td rowspan="2" style="width:30%; vertical-align:middle;  text-align: center;">
                             <h4><em>"helicopter blades spinning then fading away"</em></h4>
                           </td>
-                          <td style="width:79%; vertical-align:middle;  text-align: center;">
-                            <table class="inner-table" cellpadding="10" cellspacing="15">
-                              <tr>
-                                <td><h4><strong>FlowBind</strong></h4></td> 
-                                <td><h4>CoDi</h4></td>  
-                                <td><h4>OmniFlow</h4></td>
-                              </tr> 
-                              <tr>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_flowbind3.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_codi3.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_omni3.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-
-                              </tr>
-                            </table>
+                      
+                          <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                        </tr>
+                        <tr>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_flowbind3.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_codi3.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_omni3.wav" type="audio/wav">
+                            </audio>
                           </td>
                         </tr>
                       </table>
+                  </div>
                 </div>
-              </div>
-            
-            <div class="item">
+              <div class="item">
                 <div class="box">
                     <table class="layout-table">
                         <tr>
-                           <td style="width:21%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
-                           <td style="width:79%;"><h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4></td>
+                          <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                          <td colspan="3">
+                            <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                          </td>
                         </tr>
                         <tr>
-                          <td style="width:21%; vertical-align:middle;  text-align: center;">
+                          <td rowspan="2" style="width:30%; vertical-align:middle;  text-align: center;">
                             <h4><em>"a cat meowing and whining"</em></h4>
                           </td>
-                          <td style="width:79%; vertical-align:middle;  text-align: center;">
-                            <table class="inner-table" cellpadding="10" cellspacing="15">
-                              <tr>
-                                <td><h4><strong>FlowBind</strong></h4></td> 
-                                <td><h4>CoDi</h4></td>  
-                                <td><h4>OmniFlow</h4></td>
-                              </tr> 
-                              <tr>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_flowbind4.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_codi4.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_omni4.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-
-                              </tr>
-                            </table>
+                      
+                          <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                        </tr>
+                        <tr>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_flowbind4.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_codi4.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_omni4.wav" type="audio/wav">
+                            </audio>
                           </td>
                         </tr>
                       </table>
+                  </div>
                 </div>
-              </div>
-            
-
           
-            <div class="item">
+       
+            
+                <div class="item">
                 <div class="box">
                     <table class="layout-table">
                         <tr>
-                           <td style="width:21%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
-                           <td style="width:79%;"><h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4></td>
+                          <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                          <td colspan="3">
+                            <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                          </td>
                         </tr>
                         <tr>
-                          <td style="width:21%; vertical-align:middle;  text-align: center;">
+                          <td rowspan="2" style="width:30%; vertical-align:middle;  text-align: center;">
                             <h4><em>"several loud burps"</em></h4>
                           </td>
-                          <td style="width:79%; vertical-align:middle;  text-align: center;">
-                            <table class="inner-table" cellpadding="10" cellspacing="15">
-                              <tr>
-                                <td><h4><strong>FlowBind</strong></h4></td> 
-                                <td><h4>CoDi</h4></td>  
-                                <td><h4>OmniFlow</h4></td>
-                              </tr> 
-                              <tr>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_flowbind5.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_codi5.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_omni5.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-
-                              </tr>
-                            </table>
+                      
+                          <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                        </tr>
+                        <tr>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_flowbind5.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_codi5.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_omni5.wav" type="audio/wav">
+                            </audio>
                           </td>
                         </tr>
                       </table>
+                  </div>
                 </div>
-              </div>
-                       <div class="item">
-                <div class="box">
+
+                <div class="item">
+                  <div class="box">
                     <table class="layout-table">
                         <tr>
-                           <td style="width:21%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
-                           <td style="width:79%;"><h4 class="title is-4 has-text-centered"><strong>Generated Results</strong></h4></td>
+                          <td style="width:30%;"><h4 class="title is-4 has-text-centered"><strong>Input Conditions</strong></h4></td>
+                          <td colspan="3">
+                            <h4><span class="title-text"><strong>Generated Results</strong></span></h4>
+                          </td>
                         </tr>
                         <tr>
-                          <td style="width:21%; vertical-align:middle;  text-align: center;">
+                          <td rowspan="2" style="width:30%; vertical-align:middle;  text-align: center;">
                             <h4><em>"typing is occurring on a keyboard in a quiet environment"</em></h4>
                           </td>
-                          <td style="width:79%; vertical-align:middle;  text-align: center;">
-                            <table class="inner-table" cellpadding="10" cellspacing="15">
-                              <tr>
-                                <td><h4><strong>FlowBind</strong></h4></td> 
-                                <td><h4>CoDi</h4></td>  
-                                <td><h4>OmniFlow</h4></td>
-                              </tr> 
-                              <tr>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_flowbind6.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_codi6.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-                                <td style="width:30%;">
-                                  <audio controls class="audio-player">
-                                    <source src="static/images/t2a_omni6.wav" type="audio/wav">
-                                  </audio>
-                                </td>
-
-                              </tr>
-                            </table>
+                      
+                          <td><h4 class="has-text-centered"><strong>FlowBind</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>CoDi</strong></h4></td>
+                          <td><h4 class="has-text-centered"><strong>OmniFlow</strong></h4></td>
+                        </tr>
+                        <tr>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_flowbind6.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_codi6.wav" type="audio/wav">
+                            </audio>
+                          </td>
+                          <td class="has-text-centered" style="width:30%;">
+                            <audio controls class="audio-player" style="width:95%;">
+                              <source src="static/images/t2a_omni6.wav" type="audio/wav">
+                            </audio>
                           </td>
                         </tr>
                       </table>
+                  </div>
                 </div>
-              </div>
           
           
-            
+          
+        
+  
 
         </div>
       </div>
