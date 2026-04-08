@@ -198,16 +198,43 @@ body {
     box-sizing: border-box;
   }
 
-  /* ---- Inner results table (FlowBind | CoDi | OmniFlow): scroll horizontally ---- */
-  .carousel .item .box .layout-table td:has(.inner-table) {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  /* ---- Inner results table: stack each model name above its result ---- */
+  /* Use display:contents on <tr> so <td> become direct grid items,
+     then assign grid-row to interleave: name1, result1, name2, result2, … */
+  .carousel .item .box .inner-table {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    min-width: unset !important;
+    width: 100%;
   }
 
-  .carousel .item .box .inner-table {
-    display: table !important;
-    min-width: 380px;
-    width: 100%;
+  .carousel .item .box .inner-table tr {
+    display: contents !important;
+  }
+
+  .carousel .item .box .inner-table tr:first-child td:nth-child(1) { grid-row: 1; }
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(1) { grid-row: 2; }
+  .carousel .item .box .inner-table tr:first-child td:nth-child(2) { grid-row: 3; }
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(2) { grid-row: 4; }
+  .carousel .item .box .inner-table tr:first-child td:nth-child(3) { grid-row: 5; }
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(3) { grid-row: 6; }
+
+  /* Name cells: centered, with a dividing line before 2nd and 3rd model */
+  .carousel .item .box .inner-table tr:first-child td {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  .carousel .item .box .inner-table tr:first-child td:nth-child(n+2) {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+  }
+
+  /* Result cells: full width, a little breathing room below */
+  .carousel .item .box .inner-table tr:last-child td {
+    width: 100% !important;
+    padding-bottom: 8px;
+    text-align: center;
   }
 
   /* ---- Images and audio stay within bounds ---- */
