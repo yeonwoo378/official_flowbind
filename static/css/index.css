@@ -209,6 +209,11 @@ body {
     gap: 0;
   }
 
+  /* tbody is auto-inserted by browsers — make it transparent too */
+  .carousel .item .box .inner-table tbody {
+    display: contents !important;
+  }
+
   .carousel .item .box .inner-table tr {
     display: contents !important;
   }
