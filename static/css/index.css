@@ -150,3 +150,109 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* ===== Mobile Responsive ===== */
+@media screen and (max-width: 768px) {
+
+  /* Shrink the hero title so it fits on narrow screens */
+  h1.title.is-1 {
+    font-size: 1.75rem !important;
+  }
+
+  /* ---- Carousel item: let height be driven by content ---- */
+  .carousel .item {
+    height: auto !important;
+    min-height: unset !important;
+    max-height: none !important;
+  }
+
+  .carousel .item .box {
+    height: auto !important;
+    max-height: none !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .carousel .item .rbox {
+    height: auto !important;
+  }
+
+  .carousel .item .tbox,
+  .carousel .item .textbox {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  /* ---- Stack the two-column layout-table (input | results) vertically ---- */
+  .carousel .item .box .layout-table,
+  .carousel .item .box .layout-table tbody,
+  .carousel .item .box .layout-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .carousel .item .box .layout-table td {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* ---- Inner results table (FlowBind | CoDi | OmniFlow): scroll horizontally ---- */
+  .carousel .item .box .layout-table td:has(.inner-table) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel .item .box .inner-table {
+    display: table !important;
+    min-width: 380px;
+    width: 100%;
+  }
+
+  /* ---- Images and audio stay within bounds ---- */
+  .carousel .item img {
+    max-width: 100% !important;
+  }
+
+  .carousel .item audio {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  /* ---- Carousel headings slightly smaller ---- */
+  .carousel .item h4 {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .carousel .item h4 .title-text {
+    font-size: 16px;
+  }
+
+  /* ---- Project preview cards: wrap instead of overflow ---- */
+  #project-previews {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .project {
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto;
+  }
+
+  /* ---- BibTeX pre block: scroll instead of overflow ---- */
+  pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.8rem;
+    white-space: pre;
+  }
+
+  /* ---- Main figure images responsive ---- */
+  .interpolation-image {
+    width: 100% !important;
+    height: auto;
+  }
+}
