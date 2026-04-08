@@ -198,43 +198,56 @@ body {
     box-sizing: border-box;
   }
 
-  /* ---- Inner results table: stack each model name above its result ---- */
-  /* Use display:contents on <tr> so <td> become direct grid items,
-     then assign grid-row to interleave: name1, result1, name2, result2, … */
+  /* ---- Inner results table: result first, then method name below as label ----
+     display:contents on <tr> makes tds direct grid children so we can
+     freely assign grid-row.  Order per model: result → name (caption style). */
   .carousel .item .box .inner-table {
     display: grid !important;
     grid-template-columns: 1fr;
     min-width: unset !important;
     width: 100%;
+    gap: 0;
   }
 
   .carousel .item .box .inner-table tr {
     display: contents !important;
   }
 
-  .carousel .item .box .inner-table tr:first-child td:nth-child(1) { grid-row: 1; }
-  .carousel .item .box .inner-table tr:last-child  td:nth-child(1) { grid-row: 2; }
-  .carousel .item .box .inner-table tr:first-child td:nth-child(2) { grid-row: 3; }
-  .carousel .item .box .inner-table tr:last-child  td:nth-child(2) { grid-row: 4; }
-  .carousel .item .box .inner-table tr:first-child td:nth-child(3) { grid-row: 5; }
-  .carousel .item .box .inner-table tr:last-child  td:nth-child(3) { grid-row: 6; }
+  /* result1(row 1), name1(row 2), result2(row 3), name2(row 4), result3(row 5), name3(row 6) */
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(1) { grid-row: 1; }
+  .carousel .item .box .inner-table tr:first-child td:nth-child(1) { grid-row: 2; }
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(2) { grid-row: 3; }
+  .carousel .item .box .inner-table tr:first-child td:nth-child(2) { grid-row: 4; }
+  .carousel .item .box .inner-table tr:last-child  td:nth-child(3) { grid-row: 5; }
+  .carousel .item .box .inner-table tr:first-child td:nth-child(3) { grid-row: 6; }
 
-  /* Name cells: centered, with a dividing line before 2nd and 3rd model */
-  .carousel .item .box .inner-table tr:first-child td {
-    text-align: center;
-    padding-bottom: 4px;
-  }
-
-  .carousel .item .box .inner-table tr:first-child td:nth-child(n+2) {
-    border-top: 1px solid #e0e0e0;
-    padding-top: 10px;
-  }
-
-  /* Result cells: full width, a little breathing room below */
+  /* Result cells: full width, centered */
   .carousel .item .box .inner-table tr:last-child td {
     width: 100% !important;
-    padding-bottom: 8px;
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 2px;
+  }
+
+  /* First result needs no extra top padding */
+  .carousel .item .box .inner-table tr:last-child td:first-child {
+    padding-top: 4px;
+  }
+
+  /* Name cells: styled as a small label/caption below each result */
+  .carousel .item .box .inner-table tr:first-child td {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    padding: 2px 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* Last name cell needs no divider */
+  .carousel .item .box .inner-table tr:first-child td:last-child {
+    border-bottom: none;
+    padding-bottom: 4px;
   }
 
   /* ---- Images and audio stay within bounds ---- */
